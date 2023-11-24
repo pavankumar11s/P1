@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Disease Predictor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <ul>
+                <li><a href="h">Home</a></li>
+                <li><a href="p_det">Patient Details</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <p>Dear {{person}}</p>
+            <h2>I'm very sorry !!</h2>
+            <p>You are likely to get a heart disease.</p>
+            <div>
+                <a href=simple>
+                <button type="button"><span></span>Simple Predictor</button>
+                </a>
+                <a href=advanced>
+                <button type="button"><span></span>Advanced Predictor</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
